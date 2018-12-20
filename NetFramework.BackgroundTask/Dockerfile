@@ -1,4 +1,8 @@
 ﻿FROM microsoft/windowsservercore
-#ADD /bin/Debug/ /
-ADD publish/ /
+#ADD /bin/Release/ /
+
+WORKDIR /app
+COPY bin/Release/ . 
+
+
 ENTRYPOINT NetFramework.BackgroundTask.exe 
