@@ -1,5 +1,5 @@
 ﻿#FROM microsoft/windowsservercore
-FROM microsoft/dotnet-framework:4.7.2
+FROM microsoft/dotnet-framework:4.7
 #ADD /bin/Release/ /
 
 WORKDIR /app
