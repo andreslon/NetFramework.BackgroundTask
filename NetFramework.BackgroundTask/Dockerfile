@@ -1,4 +1,5 @@
-﻿FROM microsoft/windowsservercore
+﻿#FROM microsoft/windowsservercore
+FROM microsoft/dotnet-framework:4.7.2
 #ADD /bin/Release/ /
 
 WORKDIR /app
