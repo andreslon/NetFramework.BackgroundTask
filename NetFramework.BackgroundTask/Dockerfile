@@ -1,4 +1,4 @@
-﻿FROM microsoft/windowsservercore
+﻿FROM mcr.microsoft.com/windows/nanoserver
 #FROM microsoft/dotnet-framework:4.7
 #ADD /bin/Release/ /
 

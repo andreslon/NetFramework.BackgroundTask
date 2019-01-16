@@ -10,7 +10,7 @@ namespace NetFramework.BackgroundTask
         private Timer Timer { get; set; }
         public void Dispose()
         {
-            throw new NotImplementedException();
+            
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
