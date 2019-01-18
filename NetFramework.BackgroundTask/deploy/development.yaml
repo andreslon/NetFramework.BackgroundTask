@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #{ImageName}#
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: #{ImageName}#
+  template:
+    metadata:
+      labels:
+        app: #{ImageName}#
+    spec:
+      containers:
+      - name: #{ImageName}#
+        image: #{AcrDev}#/#{ImageName}#:#{VersionImage}#
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: #{Environment}#
+        resources:
+          requests:
+            cpu: 250m
+            memory: 300Mi
+          limits:
+            cpu: 250m
+            memory: 300Mi
